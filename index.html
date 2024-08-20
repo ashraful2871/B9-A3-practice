@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -8,24 +8,63 @@
     <!-- daisyUI and tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Hockey</title>
 </head>
 
 <body>
     <!-- header section -->
-<header>
+    <header class="md:container md:mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-4xl font-bold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl font-bold">
+                        <li class="hover:text-[#FF4240] duration-300 ease-in-out"><a>Home</a></li>
+                        <li class="hover:text-[#FF4240] duration-300 ease-in-out"><a>About</a></li>
+                        <li class="hover:text-[#FF4240] duration-300 ease-in-out"><a>Pages</a></li>
+                        <li class="hover:text-[#FF4240] duration-300 ease-in-out"><a>Blog</a></li>
+                        <li class="hover:text-[#FF4240] duration-300 ease-in-out"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex space-x-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn bg-[#FF4240] text-white text-lg font-bold">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-</header>
+    <!-- main section -->
+    <main class="md:container md:mx-auto">
 
-<!-- main section -->
-<main>
+    </main>
 
-</main>
+    <!-- footer section -->
+    <footer>
 
-<!-- footer section -->
-<footer>
-
-</footer>
+    </footer>
 </body>
 
 </html>
